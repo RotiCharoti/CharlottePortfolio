@@ -1,0 +1,99 @@
+/* Overall header container */
+.header {
+  position: fixed; /* Keeps header at the top */
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(135deg, #283845, #2D6A4F);
+  border-bottom: 1px solid #3A506B;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000; /* Ensures it stays above content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure content doesn't get hidden under the fixed header */
+body {
+  padding-top: 80px; /* Adjust based on header height */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Small colored circle */
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+/* Name / Logo text */
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 600;
+  color: #F0F4F8;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Vertical bar separators + increased spacing */
+.nav-list li {
+  position: relative;
+  padding: 0 1.5rem;
+  font-weight: 500;
+}
+
+/* Remove the left bar from the first item */
+.nav-list li:first-child {
+  padding-left: 0;
+}
+
+/* The vertical bar between links */
+.nav-list li:not(:first-child) {
+  border-left: 1px solid #F0F4F8;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #F0F4F8;
+  transition: color 0.3s;
+}
+
+/* Updated hover color */
+.nav-list li a:hover {
+  color: #52B788; /* Fresh teal accent for hover effect */
+}
+
+/* 🔹 Responsive Fixes */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-list li {
+    padding: 0 1rem;
+  }
+}

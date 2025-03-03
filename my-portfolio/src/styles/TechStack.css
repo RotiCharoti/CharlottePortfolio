@@ -1,0 +1,59 @@
+.tech-stack-title {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 3rem;                   /* Adjust size as needed */
+  font-weight: 700;
+  color: #333;                       /* Dark text color */
+  letter-spacing: 0.05em;            /* Slight spacing for a nicer look */
+  margin-bottom: 2rem; 
+  margin: 0 auto; /* Centers the section horizontally */
+  text-align: center;
+}
+
+/* Container that hides the overflowing content */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Optional: set a fixed height if desired */
+  /* height: 120px; */
+  background-color: #fdfdfd; /* Adjust if needed */
+  margin: 2rem auto;         /* Center in the page */
+}
+
+/* The track that moves left continuously */
+.slide-track {
+  display: inline-flex;
+  white-space: nowrap;   /* Prevent line breaks so items scroll in one row */
+  animation: scroll 25s linear infinite; 
+  /* 20s is the total time for one full scroll; increase for slower speed */
+}
+
+/* Each item in the track */
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;       /* Adjust width of each logo container */
+  margin-right: 2rem; /* Spacing between logos */
+}
+
+/* Logo images */
+.slide img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10rem; /* Adds left & right spacing around each image */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translate left by half the total track length. 
+       If you have N logos * (width + margin), you can fine-tune this. 
+       With the repeated array, -50% is often enough for seamless scroll.
+    */
+    transform: translateX(-50%);
+  }
+}

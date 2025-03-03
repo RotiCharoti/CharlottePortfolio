@@ -1,0 +1,35 @@
+.section-title {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 3rem;                   /* Adjust size as needed */
+  font-weight: 700;
+  color: #333;                       /* Dark text color */
+  margin-left: 200px;                /* Same left margin as before */
+  letter-spacing: 0.05em;            /* Slight spacing for a nicer look */
+}
+
+/* Container to center the button */
+.deploy-button-container {
+  text-align: center; 
+  margin-top: 1rem; /* Add some space above the button if desired */
+}
+
+/* Button styled as a link */
+.project-deploy-btn {
+  display: inline-block;       /* Allows margin auto or centering within text-align: center */
+  padding: 1rem 2rem;         /* Bigger padding for a larger button */
+  background: linear-gradient(135deg, #283845, #2D6A4F); /* Same as header gradient */
+  color: #fff;                /* Text color for contrast */
+  border-radius: 4px;
+  font-size: 1.25rem;        
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  margin-left: 530px;   
+  margin-bottom: 30px;     
+}
+
+/* Hover effect */
+.project-deploy-btn:hover {
+  opacity: 0.9;
+}

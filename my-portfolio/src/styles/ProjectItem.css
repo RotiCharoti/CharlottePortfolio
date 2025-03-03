@@ -1,0 +1,82 @@
+.project-item {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  /* Adjust this value until it visually lines up with your AboutMe section */
+  margin-left: 200px; /* Try 200px, 220px, or 250px, etc. */
+}
+
+/* Left side (image) */
+.project-image-container {
+  flex: 0 0 300px; /* Reserve space for the image on larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Adjust if you need to fill the container */
+}
+
+/* Right side (text) */
+.project-text {
+  flex: 1; /* Take remaining space */
+  min-width: 280px;
+}
+
+/* Project number (e.g., "01") */
+.project-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #666;
+  margin: 0 0 0.25rem;
+}
+
+/* Project title (e.g., "Electric car-sharing system") */
+.project-title {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Project description */
+.project-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  color: #333;
+  margin-right: 150px;
+}
+
+/* Repository link paragraph */
+.project-repo {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.project-repo a {
+  color: #0077b6; /* Example link color */
+  text-decoration: none;
+}
+
+.project-repo a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column; /* Image on top, text below */
+    margin-left: 0;         /* Remove the left margin on smaller screens */
+  }
+
+  .project-image-container {
+    flex: 0 0 auto; /* Let it size naturally */
+    margin-bottom: 1.5rem;
+  }
+}
