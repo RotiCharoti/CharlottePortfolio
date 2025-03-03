@@ -49,9 +49,12 @@
 }
 
 /* Fixed textarea size */
+/* Fixed-size textarea */
 .contact-textarea {
-  resize: vertical;
+  resize: none; /* Prevent resizing */
   min-height: 150px;
+  max-height: 150px; /* Set a fixed height */
+  overflow-y: auto; /* Allow scrolling inside if content exceeds */
 }
 
 /* Submit Button */
@@ -63,9 +66,10 @@
   color: #fff;
   background: linear-gradient(135deg, #283845, #2D6A4F); /* Matches header */
   border: none;
-  border-radius: 50px;
+  border-radius: 4px;
   cursor: pointer;
   transition: opacity 0.2s;
+  width: 625px;
 }
 
 /* Hover Effect */
