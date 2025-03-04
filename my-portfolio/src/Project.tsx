@@ -86,14 +86,24 @@ const Projects: React.FC = () => {
         repoText="VitaSync"
       />
 
-      <a
-        href="https://www.figma.com/proto/2Do3Oqkf7D6CHzD2Gqm5h3/Charlotte_DUX_ASG1_Part2_MobileApp?node-id=1-284&t=XD1Y5zuj595LLhV1-1"
-        target="_blank"
-        rel="noreferrer"
-        className="project-deploy-btn"
-      >
-        View Figma
-      </a>
+      <div className="project-buttons">
+        <a
+          href="https://www.figma.com/proto/2Do3Oqkf7D6CHzD2Gqm5h3/Charlotte_DUX_ASG1_Part2_MobileApp?node-id=1-284&t=XD1Y5zuj595LLhV1-1"
+          target="_blank"
+          rel="noreferrer"
+          className="project-deploy-btn"
+        >
+          View Figma
+        </a>
+        <a
+          href="https://www.canva.com/design/DAGX48z_xV4/2wGiwSFmbyFXjRpvfYaYbw/view?utm_content=DAGX48z_xV4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h92de6b5b3a"
+          target="_blank"
+          rel="noreferrer"
+          className="project-deploy-btn"
+        >
+          View Application Proposal
+        </a>
+      </div>
       <br></br>
       <br></br>
       <br></br>
