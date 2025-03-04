@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
 
       <ProjectItem
         projectNumber="04"
-        title="Electric Car-Sharing Syste (Revamping)"
+        title="Electric Car-Sharing System (Revamping)"
         description="This project is a fully functional electric car-sharing system, designed to be efficient, scalable, and user-friendly. It consists of three distinct microservices, each handling specific aspects of the system: User Service, Vehicle Service, and Billing Service. These services communicate seamlessly through RESTful APIs, enabling a cohesive experience for users while maintaining modularity for future scalability and maintenance."
         imageSrc={goLogo}
         repoLink="https://github.com/RotiCharoti/Charlotte_CarSharingSystem"
