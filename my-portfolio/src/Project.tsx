@@ -12,6 +12,7 @@ const Projects: React.FC = () => {
   return (
     <div>
       <br></br>
+      <p className="section-title">Fullstack Projects</p>
 
       <ProjectItem
         projectNumber="01"
