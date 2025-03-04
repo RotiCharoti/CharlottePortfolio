@@ -46,7 +46,7 @@
 
 /* Project description */
 .project-description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 0 0 1rem;
   color: #333;
@@ -55,7 +55,7 @@
 
 /* Repository link paragraph */
 .project-repo {
-  font-size: 1rem;
+  font-size: 18px;
   margin: 0;
 }
 
