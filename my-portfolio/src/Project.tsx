@@ -12,20 +12,9 @@ const Projects: React.FC = () => {
   return (
     <div>
       <br></br>
-      <p className="section-title">Full-Stack Projects</p>
+
       <ProjectItem
         projectNumber="01"
-        title="Electric Car-Sharing System"
-        description="This project is a fully functional electric car-sharing system, designed to be efficient, scalable, and user-friendly. It consists of three distinct microservices, each handling specific aspects of the system: User Service, Vehicle Service, and Billing Service. These services communicate seamlessly through RESTful APIs, enabling a cohesive experience for users while maintaining modularity for future scalability and maintenance."
-        imageSrc={goLogo}
-        repoLink="https://github.com/RotiCharoti/Charlotte_CarSharingSystem"
-        repoText="Electric Car-Sharing System"
-      />
-
-      <br></br>
-
-      <ProjectItem
-        projectNumber="02"
         title="Suave - Cloud-based WebServer Ad Distribution"
         description="This project empowers users to efficiently manage, distribute, and control advertisements displayed on televisions. Its web server enables the customization of advertisements, allowing users to push content to TVs and organize them into various segments."
         imageSrc={suaveLogo}
@@ -37,7 +26,7 @@ const Projects: React.FC = () => {
       <br></br>
       <p className="section-title">Frontend Projects</p>
       <ProjectItem
-        projectNumber="03"
+        projectNumber="02"
         title="MM News - Marilyn Monroe Biography Website"
         description="This website is a biography of Marilyn Monroe, offering an engaging overview of her life and career. It covers her rise to fame, the challenges she faced despite her iconic status, and her enduring influence. The site also includes interesting facts and an interactive quiz, making it a great starting point for anyone looking to learn more about the legendary actress."
         imageSrc={mmNewsLogo}
@@ -56,7 +45,7 @@ const Projects: React.FC = () => {
       <br></br>
 
       <ProjectItem
-        projectNumber="04"
+        projectNumber="03"
         title="Timeless Market - E-Commerce Website"
         description="Timeless Market is a platform dedicated to showcasing enduring local businesses in Singapore. It features detailed reviews of shops across categories such as fashion, hobbies, art, thrift stores, food, and jewelry, allowing users to experience these products through our eyes. Additionally, the site encourages community engagement by offering a comment section for feedback and a dedicated page for reporting issues or suggesting improvements."
         imageSrc={timelessMarketLogo}
@@ -71,6 +60,19 @@ const Projects: React.FC = () => {
       >
         Visit Website
       </a>
+
+      <br></br>
+      <br></br>
+      <p className="section-title">Backend Projects</p>
+
+      <ProjectItem
+        projectNumber="04"
+        title="Electric Car-Sharing System"
+        description="This project is a fully functional electric car-sharing system, designed to be efficient, scalable, and user-friendly. It consists of three distinct microservices, each handling specific aspects of the system: User Service, Vehicle Service, and Billing Service. These services communicate seamlessly through RESTful APIs, enabling a cohesive experience for users while maintaining modularity for future scalability and maintenance."
+        imageSrc={goLogo}
+        repoLink="https://github.com/RotiCharoti/Charlotte_CarSharingSystem"
+        repoText="Electric Car-Sharing System"
+      />
 
       <br></br>
       <br></br>
